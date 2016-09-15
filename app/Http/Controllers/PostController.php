@@ -148,9 +148,6 @@ class PostController extends Controller
             ));
         }
 
-        // Save the data to the database
-        $post = Post::find($id);
-
         $post->title = $request->input('title');
         $post->slug = $request->input('slug');
         $post->category_id = $request->input('category_id');
